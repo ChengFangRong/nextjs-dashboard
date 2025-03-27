@@ -4,7 +4,14 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { Suspense } from 'react';
 import { RevenueChartSkeleton, LatestInvoicesSkeleton, CardSkeleton } from '@/app/ui/skeletons'; //loading pages b4 content
+import { Metadata } from 'next';
  
+export const metadata: Metadata = {
+    title: 'Dashboard',
+
+}; 
+
+
 export default async function Page() {
   // const revenue = await fetchRevenue();
   // const latestInvoices = await fetchLatestInvoices();
